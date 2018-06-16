@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         BuscarImagem buscarImagem = new BuscarImagem(this);
         buscarImagem.execute("https://i.ndtvimg.com/i/2017-08/ola-cabs-google_827x510_61503392022.jpg");
     }
+
+    public void buscarTimes(View view){
+        BuscarTimesWS buscarTimesWS = new BuscarTimesWS(this);
+        buscarTimesWS.execute("http ://200.17.98.122:8080/hellows/rest/service/listaTimesSP");
+    }
 }
